@@ -5,11 +5,15 @@
 <web-app>
    <display-name>Simple Clojure WebApp</display-name>
    <servlet>
-      <servlet-name>myservlet</servlet-name>
-      <servlet-class>simple.war</servlet-class>
+      <servlet-name>api-servlet</servlet-name>
+      <servlet-class>org.lpetit.ring.servlet.RingHttpServlet</servlet-class>
+      <init-param>
+         <param-name>handler</param-name>
+         <param-value>simple.core/app</param-value>
+      </init-param>
    </servlet>
    <servlet-mapping>
-      <servlet-name>myservlet</servlet-name>
+      <servlet-name>api-servlet</servlet-name>
       <url-pattern>/*</url-pattern>
    </servlet-mapping>
 </web-app>
