@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
    <modelVersion>4.0.0</modelVersion>
-   <groupId>org.clojure.web</groupId>
-   <artifactId>clojure-servlet</artifactId>
+   <groupId>any</groupId>
+   <artifactId>clojure-maven-war-example</artifactId>
    <packaging>war</packaging>
    <version>1.0</version>
-   <name>clojure-servlet</name>
+   <name>clojure-maven-war-example</name>
    <url>http://maven.apache.org</url>
 
    <dependencies>
@@ -80,7 +80,7 @@
    </repositories>
 
    <build>
-      <finalName>clojure-servlet</finalName>
+      <finalName>war-example</finalName>
       <plugins>
          <plugin>
             <groupId>com.theoryinpractise</groupId>

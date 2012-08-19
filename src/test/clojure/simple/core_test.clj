@@ -8,5 +8,5 @@
   (contains {:status code}))
 
 (deftest status (facts "Simple test"
-           (let [response (sc/app (request :get "/clojure-servlet/"))]
+           (let [response (sc/app (request :get "/war-example/"))]
              response => (is-status 200))))
