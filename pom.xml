@@ -95,6 +95,7 @@
                <namespaces>
                   <namespace>!simple.war</namespace>
                </namespaces>
+               <replScript>start-jetty-server.clj</replScript>
             </configuration>
             <executions>
                <execution>

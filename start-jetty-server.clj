@@ -1,4 +1,4 @@
-(ns simple.dev.server
+(ns simple.dev.start-jetty-server
   (:require simple.core)
   (:use ring.adapter.jetty
         ring.middleware.reload-modified
