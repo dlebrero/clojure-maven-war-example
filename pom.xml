@@ -41,6 +41,18 @@
         <version>0.1.0-beta9</version>
       </dependency>
       <dependency>
+         <groupId>midje</groupId>
+         <artifactId>midje</artifactId>
+         <version>1.5.0-SNAPSHOT</version>
+         <scope>test</scope>
+      </dependency>
+      <dependency>
+         <groupId>ring-mock</groupId>
+         <artifactId>ring-mock</artifactId>
+         <version>0.1.3</version>
+         <scope>test</scope>
+      </dependency>
+      <dependency>
          <groupId>ring-reload-modified</groupId>
          <artifactId>ring-reload-modified</artifactId>
          <version>0.1.1</version>
@@ -73,7 +85,7 @@
          <plugin>
             <groupId>com.theoryinpractise</groupId>
             <artifactId>clojure-maven-plugin</artifactId>
-            <version>1.3.11</version>
+            <version>1.3.12-SNAPSHOT</version>
             <configuration>
                <sourceDirectories>
                   <sourceDirectory>src/main/clojure</sourceDirectory>
@@ -90,6 +102,13 @@
                   <phase>compile</phase>
                   <goals>
                      <goal>compile</goal>
+                  </goals>
+               </execution>
+               <execution>
+                  <id>test</id>
+                  <phase>test</phase>
+                  <goals>
+                     <goal>test</goal>
                   </goals>
                </execution>
             </executions>
