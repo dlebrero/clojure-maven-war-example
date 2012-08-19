@@ -10,6 +10,6 @@ It includes:
 
 ## Basic Usage
 
-Run `mvn package` to generate the war
+Run `mvn package` to generate the war.
 
-Run `mvn clojure:repl` to start a repl with a Jetty server with autorefresh
+Run `mvn clojure:repl` to start a repl with a Jetty server with autorefresh. The application will be available at http://localhost:8080/war-example/
