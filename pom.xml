@@ -70,6 +70,18 @@
          <version>1.1.0</version>
          <scope>test</scope>
       </dependency>
+      <dependency>
+         <groupId>robert</groupId>
+         <artifactId>hooke</artifactId>
+         <version>1.1.2</version>
+         <scope>test</scope>
+      </dependency>
+      <dependency>
+         <groupId>lein-reload</groupId>
+         <artifactId>lein-reload</artifactId>
+         <version>1.0.0</version>
+         <scope>test</scope>
+      </dependency>
    </dependencies>
 
    <repositories>

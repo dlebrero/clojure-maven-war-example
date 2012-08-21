@@ -4,7 +4,7 @@ Example of a clojure maven project that generates a war using the [maven-clojure
 
 It includes:
 
-* A repl with autoreload for development
+* A repl with autoreload for development, both when running tests with clojure.test/run-test and before serving any request
 * [Midje](https://github.com/marick/Midje/) for testing
 * web.xml configuration using [ring-java-servlet](https://github.com/laurentpetit/ring-java-servlet) to avoid aot compilation
 
@@ -12,4 +12,5 @@ It includes:
 
 Run `mvn package` to generate the war.
 
-Run `mvn clojure:repl` to start a repl with a Jetty server with autorefresh. The application will be available at http://localhost:8080/war-example/
+Run `mvn clojure:repl` to start a repl with a Jetty server with autorefresh. The application will be available at http://localhost:8080/war-example/.
+Run unit tests with clojure.test (run-all-tests) or (run-test).
