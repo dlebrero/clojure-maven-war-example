@@ -18,3 +18,5 @@ Run `mvn clojure:repl` to start a repl with a Jetty server with autorefresh. The
 Run unit tests with clojure.test (run-all-tests) or (run-test).
 
 Add dependencies with `(add-dep '[[incanter "1.2.3"]])`
+
+Reload all modified namespaces with `(reload-changed-files)`

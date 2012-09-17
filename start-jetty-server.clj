@@ -24,8 +24,11 @@
 
 (defonce changed-ns (tracker/tracker [(io/file "src/test/clojure") (io/file "src/main/clojure")] (System/currentTimeMillis)))
 
+(defn reload-changed-files []
+  (doseq [ns (changed-ns)] (do (println "reloading" ns) (require ns :reload ))))
+
 (defn reload-tests [f & args]
-  (doseq [ns (changed-ns)] (require ns :reload))
+  (reload-changed-files)
   (apply f args))
 
 (hooke/add-hook #'clojure.test/run-tests #'reload-tests)
