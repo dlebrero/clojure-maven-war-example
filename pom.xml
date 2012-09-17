@@ -36,9 +36,15 @@
          <version>0.1.0</version>
       </dependency>
       <dependency>
-        <groupId>reply</groupId>
-        <artifactId>reply</artifactId>
-        <version>0.1.0-beta9</version>
+         <groupId>reply</groupId>
+         <artifactId>reply</artifactId>
+         <version>0.1.0-beta9</version>
+      </dependency>
+      <dependency>
+         <groupId>com.cemerick</groupId>
+         <artifactId>pomegranate</artifactId>
+         <version>0.0.13</version>
+         <scope>test</scope>
       </dependency>
       <dependency>
          <groupId>midje</groupId>

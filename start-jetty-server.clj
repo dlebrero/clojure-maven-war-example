@@ -2,11 +2,17 @@
   (:require simple.core
             [lein-reload.util.tracker :as tracker]
             [clojure.java.io :as io]
-            [robert.hooke :as hooke])
+            [robert.hooke :as hooke]
+            cemerick.pomegranate.aether)
   (:use ring.adapter.jetty
         ring.middleware.reload-modified
         ring.middleware.stacktrace
-        clojure.test))
+        clojure.test
+        [cemerick.pomegranate :only (add-dependencies)]))
+
+(defn add-dep [dep]
+  (add-dependencies :coordinates dep
+    :repositories (merge cemerick.pomegranate.aether/maven-central {"clojars" "http://clojars.org/repo"})))
 
 (defonce server (run-jetty (wrap-stacktrace (wrap-reload-modified #'simple.core/app ["src/main/clojure"])) {:port 8080 :join? false}))
 
