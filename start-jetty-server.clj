@@ -14,6 +14,10 @@
   (add-dependencies :coordinates dep
     :repositories (merge cemerick.pomegranate.aether/maven-central {"clojars" "http://clojars.org/repo"})))
 
+(def log-file (.getAbsolutePath (io/file (io/resource "src/main/resources/log4j-config.xml"))))
+
+(org.springframework.util.Log4jConfigurer/initLogging log-file 20000)
+
 (defonce server (run-jetty (wrap-stacktrace (wrap-reload-modified #'simple.core/app ["src/main/clojure"])) {:port 8080 :join? false}))
 
 (defn stop []

@@ -33,7 +33,27 @@
       <dependency>
          <groupId>org.lpetit.ring</groupId>
          <artifactId>ring-java-servlet</artifactId>
-         <version>0.1.0</version>
+         <version>0.2.0</version>
+      </dependency>
+      <dependency>
+         <groupId>org.clojure</groupId>
+         <artifactId>tools.logging</artifactId>
+         <version>0.2.4</version>
+      </dependency>
+      <dependency>
+         <groupId>org.slf4j</groupId>
+         <artifactId>slf4j-log4j12</artifactId>
+         <version>1.6.6</version>
+      </dependency>
+      <dependency>
+         <groupId>log4j</groupId>
+         <artifactId>log4j</artifactId>
+         <version>1.2.17</version>
+      </dependency>
+      <dependency>
+      	<groupId>org.springframework</groupId>
+      	<artifactId>spring-web</artifactId>
+      	<version>3.1.2.RELEASE</version>
       </dependency>
       <dependency>
          <groupId>reply</groupId>

@@ -7,7 +7,10 @@ It includes:
 * A repl with autoreload for development, both when running tests with clojure.test/run-test and before serving any request.
 * [Midje](https://github.com/marick/Midje/) for testing.
 * web.xml configuration using [ring-java-servlet](https://github.com/laurentpetit/ring-java-servlet) to avoid aot compilation.
+* Start up and shutdown functions to be executed when webapp start and stops.
 * [pomegranate](https://github.com/cemerick/pomegranate) to add new libraries without restarting the repl.
+* Log4j configuration, including automatic refresh when the log4j config file changes.
+
 
 ## Basic Usage
 
